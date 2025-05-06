@@ -9,91 +9,97 @@
       font-family: Arial, sans-serif;
       background: #f9f9f9;
       color: #333;
-      max-width: 1100px;
+      max-width: 1000px;
       margin: 40px auto;
       padding: 20px;
-      border-radius: 12px;
       background: white;
+      border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
 
     .header {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
       flex-wrap: wrap;
+      align-items: flex-start;
+      margin-bottom: 20px;
     }
 
-    .header-left h1 {
+    .header-left {
+      max-width: 60%;
+    }
+
+    h1 {
       font-size: 2em;
       margin: 0;
     }
 
     .tagline {
       color: #666;
-      margin-top: 4px;
-      font-size: 1.1em;
+      margin-top: 5px;
     }
 
     .location {
+      margin-top: 8px;
       font-size: 0.95em;
-      color: #555;
-      margin-top: 4px;
+    }
+
+    .contact {
+      text-align: right;
+      font-size: 0.95em;
     }
 
     .contact a {
       display: block;
       color: #333;
-      margin-top: 4px;
       text-decoration: none;
+      margin-top: 5px;
+    }
+
+    .section {
+      margin: 20px 0;
     }
 
     .main-content {
       display: flex;
-      flex-wrap: wrap;
-      margin-top: 30px;
       gap: 40px;
+      flex-wrap: wrap;
     }
 
-    .left, .right {
+    .left-column, .right-column {
       flex: 1;
       min-width: 300px;
     }
 
-    .section {
-      margin-bottom: 30px;
-    }
-
     .section h3 {
       margin-bottom: 10px;
-      font-size: 1.3em;
-      color: #222;
+      font-size: 1.2em;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 4px;
     }
 
     .skills span {
       background: #eee;
-      padding: 6px 12px;
+      padding: 6px 10px;
       border-radius: 8px;
       margin: 5px 5px 0 0;
       display: inline-block;
-      font-size: 0.95em;
+      font-size: 0.9em;
     }
 
     .certificates a {
       display: block;
       color: #0077b5;
       margin-top: 5px;
-      text-decoration: none;
+      word-break: break-word;
     }
 
-    strong {
-      display: inline-block;
-      margin-bottom: 3px;
-      font-weight: 600;
+    .about {
+      margin-bottom: 30px;
     }
 
     p {
-      margin-top: 0;
+      line-height: 1.5;
     }
   </style>
 </head>
@@ -113,8 +119,12 @@
     </div>
   </div>
 
+  <div class="section about">
+    <p>With prior experience as a full-stack developer, I’m working as a DevOps Engineer to enhance my skills in automation, cloud, and optimizing software delivery. I’m excited to apply my knowledge to improve processes, increase efficiency, and foster better collaboration in development teams.</p>
+  </div>
+
   <div class="main-content">
-    <div class="left">
+    <div class="left-column">
       <div class="section education">
         <h3>Education</h3>
         <p><strong>Business Management</strong><br/>
@@ -142,7 +152,7 @@
       </div>
     </div>
 
-    <div class="right">
+    <div class="right-column">
       <div class="section skills">
         <h3>Technical Skills</h3>
         <span>Python</span>
@@ -167,14 +177,10 @@
 
       <div class="section certificates">
         <h3>Certificates</h3>
-        <p><strong>Python OOP (10/2022 - 12/2022):</strong> 
-          <a href="https://softuni.bg/certificates/details/150466/072d8a30" target="_blank">View Certificate</a></p>
-        <p><strong>Django Advanced (06/2023 - 07/2023):</strong> 
-          <a href="https://softuni.bg/certificates/details/182340/5ff78e19" target="_blank">View Certificate</a></p>
-        <p><strong>Software Engineering and DevOps (09/2024 - 10/2024):</strong> 
-          <a href="https://softuni.bg/certificates/details/229565/0a48199f" target="_blank">View Certificate</a></p>
-        <p><strong>Containers and Cloud (10/2024 - 12/2024):</strong> 
-          <a href="https://softuni.bg/certificates/certificates/converttoimage/232933?code=64c34182" target="_blank">View Certificate</a></p>
+        <p><strong>Python OOP (10/2022 - 12/2022):</strong> <a href="https://softuni.bg/certificates/details/150466/072d8a30" target="_blank">View Certificate</a></p>
+        <p><strong>Django Advanced (06/2023 - 07/2023):</strong> <a href="https://softuni.bg/certificates/details/182340/5ff78e19" target="_blank">View Certificate</a></p>
+        <p><strong>Software Engineering and DevOps (09/2024 - 10/2024):</strong> <a href="https://softuni.bg/certificates/details/229565/0a48199f" target="_blank">View Certificate</a></p>
+        <p><strong>Containers and Cloud (10/2024 - 12/2024):</strong> <a href="https://softuni.bg/certificates/certificates/converttoimage/232933?code=64c34182" target="_blank">View Certificate</a></p>
       </div>
     </div>
   </div>
