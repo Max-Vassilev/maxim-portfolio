@@ -9,29 +9,60 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #f0f2f5;
       color: #2c3e50;
-      max-width: 800px;
-      margin: 50px auto;
-      padding: 30px;
-      border-radius: 16px;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    .container {
       background: #fff;
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px;
+      border-radius: 16px;
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-      line-height: 1.6;
     }
 
     h1 {
       font-size: 2.5em;
-      margin-bottom: 0;
+      margin-bottom: 5px;
       color: #1a1a1a;
     }
 
     .tagline {
       font-size: 1.2em;
       color: #777;
-      margin-top: 5px;
+      margin-bottom: 30px;
+    }
+
+    .intro {
+      margin-bottom: 30px;
+    }
+
+    .contact {
+      margin-bottom: 40px;
+    }
+
+    .contact a {
+      display: block;
+      margin: 6px 0;
+      color: #1a73e8;
+      text-decoration: none;
+    }
+
+    .columns {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .left,
+    .right {
+      flex: 1;
+      min-width: 300px;
     }
 
     .section {
-      margin: 40px 0;
+      margin-bottom: 30px;
     }
 
     h3 {
@@ -42,19 +73,23 @@
       color: #333;
     }
 
-    .contact a {
-      display: block;
-      margin: 6px 0;
-      color: #1a73e8;
-      text-decoration: none;
+    .section p {
+      margin-bottom: 20px;
     }
 
-    .contact a:hover,
-    .certificates a:hover {
+    .certificates a,
+    .contact a:hover {
       text-decoration: underline;
     }
 
-    .skills span {
+    .certificates a {
+      display: inline-block;
+      color: #1a73e8;
+      font-weight: 500;
+      margin-top: 4px;
+    }
+
+    .technical-skills span {
       background: #eaf0f6;
       padding: 8px 14px;
       border-radius: 20px;
@@ -66,109 +101,95 @@
       border: 1px solid #d0dae5;
     }
 
-    .certificates a {
-      color: #1a73e8;
-      font-weight: 500;
-      display: inline-block;
-      margin-top: 4px;
-    }
-
-    .experience p,
-    .education p {
-      margin-bottom: 20px;
-    }
-
     strong {
       color: #2c3e50;
     }
 
-    @media (max-width: 600px) {
-      body {
-        margin: 20px;
-        padding: 20px;
-      }
-
-      h1 {
-        font-size: 2em;
-      }
-
-      .skills span {
-        font-size: 0.9em;
-        padding: 6px 12px;
+    @media (max-width: 768px) {
+      .columns {
+        flex-direction: column;
       }
     }
   </style>
 </head>
 <body>
-  <h1>Maxim Vassilev</h1>
-  <p class="tagline">Jr DevOps Engineer</p>
+  <div class="container">
+    <h1>Maxim Vassilev</h1>
+    <p class="tagline">Jr DevOps Engineer</p>
 
-  <div class="section">
-    <p>With prior experience as a full-stack developer, I’m working as a DevOps Engineer to enhance my skills in automation, cloud, and optimizing software delivery. I’m excited to apply my knowledge to improve processes, increase eﬃciency, and foster better collaboration in development teams.</p>
-  </div>
+    <div class="intro">
+      <p>With prior experience as a full-stack developer, I’m working as a DevOps Engineer to enhance my skills in automation, cloud, and optimizing software delivery. I’m excited to apply my knowledge to improve processes, increase efficiency, and foster better collaboration in development teams.</p>
+    </div>
 
-  <div class="section contact">
-    <h3>Contact</h3>
-    <a href="mailto:maximvassilev01@gmail.com">Email: maximvassilev01@gmail.com</a>
-    <a href="tel:+359899849866">Mobile: +359 899 849 866</a>
-    <a href="https://linkedin.com/in/maxim-vassilev-8b9a1721a" target="_blank">LinkedIn</a>
-    <a href="https://github.com/Max-Vassilev" target="_blank">GitHub</a>
-  </div>
+    <div class="contact">
+      <h3>Contact</h3>
+      <a href="mailto:maximvassilev01@gmail.com">Email: maximvassilev01@gmail.com</a>
+      <a href="tel:+359899849866">Mobile: +359 899 849 866</a>
+      <a href="https://linkedin.com/in/maxim-vassilev-8b9a1721a" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Max-Vassilev" target="_blank">GitHub</a>
+    </div>
 
-  <div class="section experience">
-    <h3>Work Experience</h3>
-    <p><strong>Software Developer - Internship</strong><br/>
-    HackSoft – Sofia, Bulgaria<br/>
-    10/2023 – 07/2024<br/>
-    Developed backend systems and APIs using Django and an ERP framework. Gained experience with Ubuntu and used Git flow for version control.</p>
+    <div class="columns">
+      <div class="left">
+        <div class="section education">
+          <h3>Education</h3>
+          <p><strong>Business Management</strong><br/>
+          New Bulgarian University<br/>
+          10/2020 – 09/2024<br/>
+          Bachelor’s Degree – Completed</p>
 
-    <p><strong>Jr DevOps Engineer</strong><br/>
-    Blankfactor – Sofia, Bulgaria<br/>
-    11/2024 – Present<br/>
-    Focused on automation, worked with AWS, managed infrastructure with Terraform, and gained experience in Kubernetes, Linux operations, and CI/CD workflows.</p>
-  </div>
+          <p><strong>Software Technologies</strong><br/>
+          New Bulgarian University<br/>
+          10/2024 – Present<br/>
+          Master’s Degree</p>
+        </div>
 
-  <div class="section skills">
-    <h3>Skills</h3>
-    <span>Python</span>
-    <span>Django</span>
-    <span>JavaScript</span>
-    <span>TypeScript</span>
-    <span>React.js</span>
-    <span>HTML & CSS</span>
-    <span>Relational Databases</span>
-    <span>NoSQL Databases</span>
-    <span>CI/CD</span>
-    <span>Docker</span>
-    <span>Kubernetes</span>
-    <span>AWS</span>
-    <span>Azure</span>
-    <span>Google Cloud</span>
-    <span>Terraform</span>
-    <span>Linux</span>
-    <span>Computer Networking</span>
-    <span>Git Flow</span>
-  </div>
+        <div class="section experience">
+          <h3>Work Experience</h3>
+          <p><strong>Software Developer - Internship</strong><br/>
+          HackSoft – Sofia, Bulgaria<br/>
+          10/2023 – 07/2024<br/>
+          Developed backend systems and APIs using Django and an ERP framework. Gained experience with Ubuntu and used Git flow for version control.</p>
 
-  <div class="section certificates">
-    <h3>Certificates</h3>
-    <p><strong>Python OOP (10/2022 - 12/2022):</strong> <a href="https://softuni.bg/certificates/details/150466/072d8a30" target="_blank">View Certificate</a></p>
-    <p><strong>Django Advanced (06/2023 - 07/2023):</strong> <a href="https://softuni.bg/certificates/details/182340/5ff78e19" target="_blank">View Certificate</a></p>
-    <p><strong>Software Engineering and DevOps (09/2024 - 10/2024):</strong> <a href="https://softuni.bg/certificates/details/229565/0a48199f" target="_blank">View Certificate</a></p>
-    <p><strong>Containers and Cloud (10/2024 - 12/2024):</strong> <a href="https://softuni.bg/certificates/certificates/converttoimage/232933?code=64c34182" target="_blank">View Certificate</a></p>
-  </div>
+          <p><strong>Jr DevOps Engineer</strong><br/>
+          Blankfactor – Sofia, Bulgaria<br/>
+          11/2024 – Present<br/>
+          Focused on automation, worked with AWS, managed infrastructure with Terraform, and gained experience in Kubernetes, Linux operations, and CI/CD workflows.</p>
+        </div>
+      </div>
 
-  <div class="section education">
-    <h3>Education</h3>
-    <p><strong>Business Management</strong><br/>
-    New Bulgarian University<br/>
-    10/2020 – 09/2024<br/>
-    Bachelor’s Degree – Completed</p>
+      <div class="right">
+        <div class="section technical-skills">
+          <h3>Technical Skills</h3>
+          <span>Python</span>
+          <span>Django</span>
+          <span>JavaScript</span>
+          <span>TypeScript</span>
+          <span>React.js</span>
+          <span>HTML & CSS</span>
+          <span>Relational Databases</span>
+          <span>NoSQL Databases</span>
+          <span>CI/CD</span>
+          <span>Docker</span>
+          <span>Kubernetes</span>
+          <span>AWS</span>
+          <span>Azure</span>
+          <span>Google Cloud</span>
+          <span>Terraform</span>
+          <span>Linux</span>
+          <span>Computer Networking</span>
+          <span>Git Flow</span>
+        </div>
 
-    <p><strong>Software Technologies</strong><br/>
-    New Bulgarian University<br/>
-    10/2024 – Present<br/>
-    Master’s Degree</p>
+        <div class="section certificates">
+          <h3>Certificates</h3>
+          <p><strong>Python OOP (10/2022 - 12/2022):</strong> <a href="https://softuni.bg/certificates/details/150466/072d8a30" target="_blank">View Certificate</a></p>
+          <p><strong>Django Advanced (06/2023 - 07/2023):</strong> <a href="https://softuni.bg/certificates/details/182340/5ff78e19" target="_blank">View Certificate</a></p>
+          <p><strong>Software Engineering and DevOps (09/2024 - 10/2024):</strong> <a href="https://softuni.bg/certificates/details/229565/0a48199f" target="_blank">View Certificate</a></p>
+          <p><strong>Containers and Cloud (10/2024 - 12/2024):</strong> <a href="https://softuni.bg/certificates/certificates/converttoimage/232933?code=64c34182" target="_blank">View Certificate</a></p>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
