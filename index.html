@@ -6,65 +6,56 @@
   <title>Maxim Vassilev - Jr DevOps Engineer</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f0f2f5;
-      color: #2c3e50;
-      margin: 0;
-      padding: 40px 20px;
-    }
-
-    .container {
-      background: #fff;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
       max-width: 1100px;
-      margin: auto;
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
 
     .header {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       flex-wrap: wrap;
-      align-items: flex-start;
-      margin-bottom: 30px;
     }
 
     .header-left h1 {
-      font-size: 2.5em;
+      font-size: 2em;
       margin: 0;
-      color: #1a1a1a;
     }
 
-    .header-left p {
-      font-size: 1.2em;
-      color: #777;
+    .tagline {
+      color: #666;
       margin-top: 4px;
+      font-size: 1.1em;
     }
 
-    .contact {
-      text-align: right;
+    .location {
+      font-size: 0.95em;
+      color: #555;
+      margin-top: 4px;
     }
 
     .contact a {
       display: block;
-      margin: 6px 0;
-      color: #1a73e8;
+      color: #333;
+      margin-top: 4px;
       text-decoration: none;
     }
 
-    .intro {
-      margin-bottom: 40px;
-    }
-
-    .columns {
+    .main-content {
       display: flex;
-      gap: 40px;
       flex-wrap: wrap;
+      margin-top: 30px;
+      gap: 40px;
     }
 
-    .left,
-    .right {
+    .left, .right {
       flex: 1;
       min-width: 300px;
     }
@@ -73,137 +64,120 @@
       margin-bottom: 30px;
     }
 
-    h3 {
-      font-size: 1.4em;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
-      color: #333;
+    .section h3 {
+      margin-bottom: 10px;
+      font-size: 1.3em;
+      color: #222;
     }
 
-    .section p {
-      margin-bottom: 20px;
+    .skills span {
+      background: #eee;
+      padding: 6px 12px;
+      border-radius: 8px;
+      margin: 5px 5px 0 0;
+      display: inline-block;
+      font-size: 0.95em;
     }
 
     .certificates a {
-      display: inline-block;
-      color: #1a73e8;
-      font-weight: 500;
-      margin-top: 4px;
-    }
-
-    .technical-skills span {
-      background: #eaf0f6;
-      padding: 8px 14px;
-      border-radius: 20px;
-      margin: 6px 6px 0 0;
-      display: inline-block;
-      font-size: 0.95em;
-      font-weight: 500;
-      color: #1a1a1a;
-      border: 1px solid #d0dae5;
+      display: block;
+      color: #0077b5;
+      margin-top: 5px;
+      text-decoration: none;
     }
 
     strong {
-      color: #2c3e50;
+      display: inline-block;
+      margin-bottom: 3px;
+      font-weight: 600;
     }
 
-    @media (max-width: 768px) {
-      .columns {
-        flex-direction: column;
-      }
-
-      .header {
-        flex-direction: column;
-        gap: 20px;
-      }
-
-      .contact {
-        text-align: left;
-      }
+    p {
+      margin-top: 0;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <div class="header-left">
-        <h1>Maxim Vassilev</h1>
-        <p class="tagline">Jr DevOps Engineer</p>
+
+  <div class="header">
+    <div class="header-left">
+      <h1>Maxim Vassilev</h1>
+      <p class="tagline">Jr DevOps Engineer</p>
+      <p class="location">📍 Sofia, Bulgaria</p>
+    </div>
+    <div class="contact">
+      <a href="mailto:maximvassilev01@gmail.com">✉️ maximvassilev01@gmail.com</a>
+      <a href="tel:+359899849866">📞 +359 899 849 866</a>
+      <a href="https://linkedin.com/in/maxim-vassilev-8b9a1721a" target="_blank">🔗 LinkedIn</a>
+      <a href="https://github.com/Max-Vassilev" target="_blank">💻 GitHub</a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="left">
+      <div class="section education">
+        <h3>Education</h3>
+        <p><strong>Business Management</strong><br/>
+        New Bulgarian University<br/>
+        10/2020 – 09/2024<br/>
+        Bachelor’s Degree – Completed</p>
+
+        <p><strong>Software Technologies</strong><br/>
+        New Bulgarian University<br/>
+        10/2024 – Present<br/>
+        Master’s Degree</p>
       </div>
-      <div class="contact">
-        <a href="mailto:maximvassilev01@gmail.com">maximvassilev01@gmail.com</a>
-        <a href="tel:+359899849866">+359 899 849 866</a>
-        <a href="https://linkedin.com/in/maxim-vassilev-8b9a1721a" target="_blank">LinkedIn</a>
-        <a href="https://github.com/Max-Vassilev" target="_blank">GitHub</a>
+
+      <div class="section experience">
+        <h3>Work Experience</h3>
+        <p><strong>Software Developer - Internship</strong><br/>
+        HackSoft – Sofia, Bulgaria<br/>
+        10/2023 – 07/2024<br/>
+        Developed backend systems and APIs using Django and an ERP framework. Gained experience with Ubuntu and used Git flow for version control.</p>
+
+        <p><strong>Jr DevOps Engineer</strong><br/>
+        Blankfactor – Sofia, Bulgaria<br/>
+        11/2024 – Present<br/>
+        Focused on automation, worked with AWS, managed infrastructure with Terraform, and gained experience in Kubernetes, Linux operations, and CI/CD workflows.</p>
       </div>
     </div>
 
-    <div class="intro">
-      <p>With prior experience as a full-stack developer, I’m working as a DevOps Engineer to enhance my skills in automation, cloud, and optimizing software delivery. I’m excited to apply my knowledge to improve processes, increase efficiency, and foster better collaboration in development teams.</p>
-    </div>
-
-    <div class="columns">
-      <div class="left">
-        <div class="section education">
-          <h3>Education</h3>
-          <p><strong>Business Management</strong><br/>
-          New Bulgarian University<br/>
-          10/2020 – 09/2024<br/>
-          Bachelor’s Degree – Completed</p>
-
-          <p><strong>Software Technologies</strong><br/>
-          New Bulgarian University<br/>
-          10/2024 – Present<br/>
-          Master’s Degree</p>
-        </div>
-
-        <div class="section experience">
-          <h3>Work Experience</h3>
-          <p><strong>Software Developer - Internship</strong><br/>
-          HackSoft – Sofia, Bulgaria<br/>
-          10/2023 – 07/2024<br/>
-          Developed backend systems and APIs using Django and an ERP framework. Gained experience with Ubuntu and used Git flow for version control.</p>
-
-          <p><strong>Jr DevOps Engineer</strong><br/>
-          Blankfactor – Sofia, Bulgaria<br/>
-          11/2024 – Present<br/>
-          Focused on automation, worked with AWS, managed infrastructure with Terraform, and gained experience in Kubernetes, Linux operations, and CI/CD workflows.</p>
-        </div>
+    <div class="right">
+      <div class="section skills">
+        <h3>Technical Skills</h3>
+        <span>Python</span>
+        <span>Django</span>
+        <span>JavaScript</span>
+        <span>TypeScript</span>
+        <span>React.js</span>
+        <span>HTML & CSS</span>
+        <span>Relational Databases</span>
+        <span>NoSQL Databases</span>
+        <span>CI/CD</span>
+        <span>Docker</span>
+        <span>Kubernetes</span>
+        <span>AWS</span>
+        <span>Azure</span>
+        <span>Google Cloud</span>
+        <span>Terraform</span>
+        <span>Linux</span>
+        <span>Computer Networking</span>
+        <span>Git Flow</span>
       </div>
 
-      <div class="right">
-        <div class="section technical-skills">
-          <h3>Technical Skills</h3>
-          <span>Python</span>
-          <span>Django</span>
-          <span>JavaScript</span>
-          <span>TypeScript</span>
-          <span>React.js</span>
-          <span>HTML & CSS</span>
-          <span>Relational Databases</span>
-          <span>NoSQL Databases</span>
-          <span>CI/CD</span>
-          <span>Docker</span>
-          <span>Kubernetes</span>
-          <span>AWS</span>
-          <span>Azure</span>
-          <span>Google Cloud</span>
-          <span>Terraform</span>
-          <span>Linux</span>
-          <span>Computer Networking</span>
-          <span>Git Flow</span>
-        </div>
-
-        <div class="section certificates">
-          <h3>Certificates</h3>
-          <p><strong>Python OOP (10/2022 - 12/2022):</strong> <a href="https://softuni.bg/certificates/details/150466/072d8a30" target="_blank">View Certificate</a></p>
-          <p><strong>Django Advanced (06/2023 - 07/2023):</strong> <a href="https://softuni.bg/certificates/details/182340/5ff78e19" target="_blank">View Certificate</a></p>
-          <p><strong>Software Engineering and DevOps (09/2024 - 10/2024):</strong> <a href="https://softuni.bg/certificates/details/229565/0a48199f" target="_blank">View Certificate</a></p>
-          <p><strong>Containers and Cloud (10/2024 - 12/2024):</strong> <a href="https://softuni.bg/certificates/certificates/converttoimage/232933?code=64c34182" target="_blank">View Certificate</a></p>
-        </div>
+      <div class="section certificates">
+        <h3>Certificates</h3>
+        <p><strong>Python OOP (10/2022 - 12/2022):</strong> 
+          <a href="https://softuni.bg/certificates/details/150466/072d8a30" target="_blank">View Certificate</a></p>
+        <p><strong>Django Advanced (06/2023 - 07/2023):</strong> 
+          <a href="https://softuni.bg/certificates/details/182340/5ff78e19" target="_blank">View Certificate</a></p>
+        <p><strong>Software Engineering and DevOps (09/2024 - 10/2024):</strong> 
+          <a href="https://softuni.bg/certificates/details/229565/0a48199f" target="_blank">View Certificate</a></p>
+        <p><strong>Containers and Cloud (10/2024 - 12/2024):</strong> 
+          <a href="https://softuni.bg/certificates/certificates/converttoimage/232933?code=64c34182" target="_blank">View Certificate</a></p>
       </div>
     </div>
   </div>
+
 </body>
 </html>
