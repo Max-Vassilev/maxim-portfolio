@@ -37,7 +37,7 @@ header h2 {
 }
 
 .button {
-  background: linear-gradient(135deg, #2471a3, #2980b9);
+  background-color: #2980b9;
   padding: 12px 40px;
   border-radius: 30px;
   font-size: 1.1rem;
@@ -45,13 +45,14 @@ header h2 {
   border: none;
   cursor: pointer;
   color: white;
-  box-shadow: 0 0 6px #2471a3;
-  transition: box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(41, 128, 185, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .button:hover {
+  background-color: #2471a3;
+  box-shadow: 0 6px 14px rgba(36, 113, 163, 0.4);
   cursor: pointer;
-  box-shadow: 0 0 10px #2471a3;
 }
 
 .section {
