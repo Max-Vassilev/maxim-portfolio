@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maxim's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Maxim Vassilev</h1>
+    <h2>Junior DevOps Engineer</h2>
+    <button class="button" onclick="showAboutMe()">Learn More About Me</button>
+  </header>
+
+  <div class="section" id="aboutMeSection" style="display: none;">
+    <h3>About Me</h3>
+    <p>
+      With prior experience as a full-stack developer, I’m working as a Junior DevOps Engineer to enhance my skills in automation, cloud, and optimizing software delivery. I’m excited to apply my knowledge to improve processes, increase efficiency, and foster better collaboration in development teams.
+    </p>
+    <br>
+    <button class="button" onclick="hideAboutMe()">Close</button>
+  </div>
+
+  <div class="section">
+    <h3>Education</h3>
+    <div class="content">
+      <div class="item">
+        <strong>New Bulgarian University</strong>
+        <p>Master's degree, Software Technologies</p>
+        <small>Oct 2024 - Jan 2027</small>
+      </div>
+      <div class="item">
+        <strong>New Bulgarian University</strong>
+        <p>Bachelor's degree, Business Management</p>
+        <small>Oct 2020 - Sep 2024</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Experience</h3>
+    <div class="timeline">
+      <div class="timeline-item">
+        <strong>Blankfactor</strong>
+        <p>Junior DevOps Engineer</p>
+        <small>Mar 2025 - Present</small>
+        <p>AWS, Kubernetes, CI/CD, Docker</p>
+      </div>
+      <div class="timeline-item">
+        <strong>Blankfactor</strong>
+        <p>Software Developer</p>
+        <small>Nov 2024 - Mar 2025</small>
+        <p>Python, gRPC, Microservices</p>
+      </div>
+      <div class="timeline-item">
+        <strong>HackSoft</strong>
+        <p>Intern Software Developer</p>
+        <small>Oct 2023 - Jun 2024</small>
+        <p>Python, Django, REST APIs</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Find out more about my work on <a href="https://github.com/Max-Vassilev" target="_blank">GitHub</a> and connect with me on <a href="https://www.linkedin.com/in/maxim-vassilev-8b9a1721a/" target="_blank">LinkedIn</a>.</p>
+  </footer>
+
+  <script>
+    function showAboutMe() {
+      document.getElementById('aboutMeSection').style.display = 'block';
+    }
+
+    function hideAboutMe() {
+      document.getElementById('aboutMeSection').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
